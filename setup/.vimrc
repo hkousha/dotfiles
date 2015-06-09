@@ -17,7 +17,7 @@ let g:solarized_termcolors=256
 colorscheme solarized
 
 
-#new 
+"new 
 colorscheme molokai 
 set clipboard=unnamed                                                           
 "set t_Co=256                                                                   
