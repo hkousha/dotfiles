@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="paste" mtime="1433905523" type="string">
+		<stringvalue>&lt;Primary&gt;&lt;Shift&gt;v</stringvalue>
+	</entry>
+	<entry name="copy" mtime="1433905519" type="string">
+		<stringvalue>&lt;Primary&gt;&lt;Shift&gt;c</stringvalue>
+	</entry>
+</gconf>
