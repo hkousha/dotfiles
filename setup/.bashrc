@@ -119,6 +119,6 @@ alias dropbox='nohup /home/kousha/.dropbox-dist/dropboxd'
 alias apt-get='sudo apt-get'
 alias kill='sudo kill'
 export PATH=/usr/local/bin:$PATH
-export PS1="\t--\u@\h \w$ " 
+export  PS1="\[\033[01;37m\]\$(if [[ \$? == 0 ]]; then echo \"\[\033[01;32m\]\342\234\223\"; else echo \"\[\033[01;31m\]\342\234\227\"; fi) $(if [[ ${EUID} == 0 ]]; then echo '\[\033[01;31m\]\h'; else echo ' \[\033[01;36m\]\t \[\033[01;32m\]\u@\h'; fi)\[\033[01;34m\] \w:\$\[\033[00m\] "
 alias python_class="cd ~/Documents/python_class/"
 alias sublime="/home/kousha/Downloads/Sublime\ Text\ 2/sublime_text"
