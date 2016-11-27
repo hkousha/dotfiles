@@ -1,7 +1,8 @@
 #!/bin/bash
 
 sudo apt-get update
-current=`pwd`
+# Get install.sh directory to be used later.
+current="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # oh-my-zsh
 echo "Setting up zsh"
