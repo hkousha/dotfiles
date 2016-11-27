@@ -93,3 +93,6 @@ eval "$(fasd --init posix-alias zsh-hook)"
 alias v="f -e vim" # quick opening files with vim
 alias control="set -e XDG_CURRENT_DESKTOP; nohup unity-control-center &"
 alias hiber="sudo pm-hibernate"
+
+#show zsh colors
+alias zsh_colors_list="spectrum_ls"
