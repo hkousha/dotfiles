@@ -69,7 +69,7 @@ else
   export EDITOR='vim'
 fi
 
-#don't share history between zsh sessions
+# don't share history between zsh sessions
 unsetopt share_history
 
 # Compilation flags
@@ -94,5 +94,12 @@ alias v="f -e vim" # quick opening files with vim
 alias control="set -e XDG_CURRENT_DESKTOP; nohup unity-control-center &"
 alias hiber="sudo pm-hibernate"
 
-#show zsh colors
+# show zsh colors
 alias zsh_colors_list="spectrum_ls"
+
+alias tmux="tmux -S"
+
+# enable control-center settings.
+alias control-setting="unset XDG_CURRENT_DESKTOP; unity-control-center"
+
+TMUX_TMPDIR='/tmp/tmux/'
