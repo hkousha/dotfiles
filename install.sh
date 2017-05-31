@@ -4,6 +4,9 @@ sudo apt-get update
 # Get install.sh directory to be used later.
 current="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
+# Install deps:
+sudo apt-get install --yes --force-yes curl vim i3 
+
 # oh-my-zsh
 echo "Setting up zsh"
 sudo apt-get install --yes --force-yes zsh
@@ -22,6 +25,7 @@ cp zsh/dallas.zsh-theme ~/.oh-my-zsh/themes/dallas.zsh-theme
 # i3
 echo "Setting up i3"
 cd $current
+mkdir ~/.i3/
 cp i3/config ~/.i3/config
 sudo cp i3/i3status.conf /etc/i3status.conf
  
