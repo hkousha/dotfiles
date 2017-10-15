@@ -1,0 +1,20 @@
+Host *
+  ControlMaster auto
+  ControlPath ~/.ssh/sockets/%h
+  ControlPersist 600
+  serverAliveInterval 60
+
+
+HOST stg
+  User <USER>
+  HostName <HOST_NAME>
+  Port <PORT>
+  ProxyCommand ssh prod -W %h:%p
+  LocalForward <PORT> <HOST:PORT>
+  IdentityFile ~/.ssh/private.pem
+
+Host prod
+  User <USER>
+  HostName <HOST_NAME>
+  StrictHostKeyChecking no
+  GSSAPIAuthentication no
