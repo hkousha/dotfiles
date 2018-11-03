@@ -6,7 +6,7 @@ package(){
     sudo apt-get update
     # Get install.sh directory to be used later.
     # Install deps:
-    sudo apt-get install --yes --force-yes curl vim i3 git
+    sudo apt-get install --yes --force-yes curl vim i3 git python-pip
 }
 
 
