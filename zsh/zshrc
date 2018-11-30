@@ -69,6 +69,9 @@ else
   export EDITOR='vim'
 fi
 
+# Adding go to the path
+export PATH=$PATH:/usr/local/go/bin
+
 # don't share history between zsh sessions
 unsetopt share_history
 
@@ -85,8 +88,6 @@ unsetopt share_history
 #
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
-alias auth="python ~/.ssh/google_auth.py"
-alias ssh="~/.ssh/lmi_google_auth.py; ssh $1"
 alias gc="git clone https://git.edgecastcdn.net/$1/$2"
 
 eval "$(fasd --init posix-alias zsh-hook)"

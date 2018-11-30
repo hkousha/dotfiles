@@ -70,6 +70,13 @@ vim(){
     done
 }
 
+# Installing golang
+golang(){
+    wget "https://dl.google.com/go/go1.11.2.linux-amd64.tar.gz" -O ~/Downloads/go1.11.2.linux-amd64.tar.gz
+    sudo tar -C /usr/local -zxvf ~/Downloads/go1.11.2.linux-amd64.tar.gz
+    rm -rf ~/Downloads/go1.11.2.linux-amd64.tar.gz
+}
+
 OPTION=$1
 if [ -z $OPTION ]; then
     package
@@ -78,6 +85,7 @@ if [ -z $OPTION ]; then
     xscreen
     bash
     vim
+    golang
 else
     $($OPTION)
 fi
