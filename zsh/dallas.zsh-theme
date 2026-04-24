@@ -28,7 +28,7 @@ ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[green]%}"
 # Change branch color to red if the branch is diiirrrty! Dirty branch!
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[red]%}"
 # Command checker
-PREVIOUS_COMMAND_CHECKER="\$(if [[ \$? == 0 ]]; then echo \"%{$fg[green]%}✓\"; else echo \"%{$fg[red]%}✗\"; fi)"
+#PREVIOUS_COMMAND_CHECKER="\$(if [[ \$? == 0 ]]; then echo \"%{$fg[green]%}✓\"; else echo \"%{$fg[red]%}✗\"; fi)"
 
 # Put it all together!
 PROMPT="$PREVIOUS_COMMAND_CHECKER $DALLAS_CURRENT_TIME_$DALLAS_CURRENT_RUBY_$DALLAS_CURRENT_MACH_$DALLAS_CURRENT_USER_ $DALLAS_CURRENT_LOCA_$DALLAS_PROMPT_CHAR_ "
